@@ -72,6 +72,11 @@ This immediatetely secures everything with a user `user` and a generated passwor
 
 Securing all endpoints with the same security is probably not what you want, so let's limit this security to the actuator endpoints.
 
+
+#### Spring security docs
+
+[Docs](https://docs.spring.io/spring-security/site/docs/5.3.2.RELEASE/reference/html5/#authentication-password-storage-dpe)
+
 #### Hashing the password
 
 Committing passwords in the code or otherwise is a bad idea in the best of times, and in production software it is a particular bad idea. So encode the password to a hash that can not be reversed, and include that hash in the code:
